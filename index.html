@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cual es tu tipo de cuerpo?</title>
+   
+</head>
+<body>
+    <script>
+
+        const peso = parseFloat(prompt("Ingresa tu peso en kg:"));
+        const altura = parseFloat(prompt("Ingresa tu altura en cm:"));
+        const indiceGrasa = parseFloat(prompt("Ingresa tu índice de grasa corporal (%):"));
+        
+        let tipoCuerpo = "";
+        
+        if (indiceGrasa < 15) {
+          tipoCuerpo = "ectomorfo";
+        } else if (indiceGrasa >= 15 && indiceGrasa <= 25) {
+          tipoCuerpo = "mesomorfo";
+        } else {
+          tipoCuerpo = "endomorfo";
+        }
+        
+        alert(`Tu tipo de cuerpo es: ${tipoCuerpo}`);
+            </script>
+
+
+    <h1>Que tipo de cuerpo Tienes?</h1>
+    <div>
+    <h3>Ectomorfo</h3>
+    <p>El tipo de cuerpo ectomorfo se caracteriza por ser delgado, con articulaciones pequeñas y constitución ligera. Su complexión es estrecha y su metabolismo es el más acelerado de los 3 somatotipos, por lo que son personas que pueden comer grandes cantidades sin engordar. </p>
+   </div>
+   <h3>Mesomorfo</h3>
+    <p>Desde el blog HSN definen al tipo de cuerpo mesomorfo como las "personas con tendencia a ganar masa muscular y enmagrecer fácilmente. Suelen tener proporciones equilibradas, tonificadas y con buen desarrollo muscular" </p>
+   </div>
+   <h3>Endomorfo</h3>
+    <p>Los mesomorfos suelen tener una complexión atlética y media y pueden tanto ganar músculo como engordar con facilidad. </p>
+   </div>
+
+
+    
+    
+</body>
+</html>
